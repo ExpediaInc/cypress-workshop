@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "module": "CommonJS",
+    "target": "ES6",
+    "lib": ["ES2019", "DOM"],
+    "types": ["cypress"]
+  },
+  "include": ["./**/*"]
+}

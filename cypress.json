@@ -1,0 +1,8 @@
+{
+  "baseUrl": "https://www.expedia.com",
+  "chromeWebSecurity": false,
+  "defaultCommandTimeout": 15000,
+  "fixturesFolder": false,
+  "video": true,
+  "videoUploadOnPasses": true
+}
