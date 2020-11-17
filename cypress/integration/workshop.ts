@@ -17,7 +17,7 @@ describe('Search Results Page', () => {
     });
 
     describe('Search Results', () => {
-        it('should display COVID-19 banner on page load', () => {
+        it('should display search results section', () => {
             // Test code goes here
         });
     });
