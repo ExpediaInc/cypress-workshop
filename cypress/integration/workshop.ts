@@ -2,27 +2,22 @@ const url = '/Hotel-Search?adults=2&destination=Frankfurt%20%28and%20vicinity%29
 
 describe('Search Results Page', () => {
     before(() => {
-        cy.visit(url);
+        // Test setup code goes here
     });
 
     describe('COVID Banner', () => {
         it('should display COVID-19 banner on page load', () => {
-            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
-                .should('be.visible');
+            // Test code goes here
         });
 
         it('can dismiss banner', () => {
-            cy.findByRole('button', { name: /Dismiss/ })
-                .click()
-                .findByText('Germany may have travel restrictions in place due to COVID-19.')
-                .should('not.exist');
+            // Test code goes here
         });
     });
 
     describe('Search Results', () => {
         it('should display COVID-19 banner on page load', () => {
-            cy.get('section[data-stid="section-results"]')
-                .should('be.visible');
+            // Test code goes here
         });
     });
 });
