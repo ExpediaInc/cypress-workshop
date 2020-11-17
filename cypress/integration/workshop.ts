@@ -7,7 +7,8 @@ describe('Search Results Page', () => {
 
     describe('COVID Banner', () => {
         it('should display COVID-19 banner on page load', () => {
-            // Test code goes here
+            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
+                .should('be.visible');
         });
 
         it('can dismiss banner', () => {
