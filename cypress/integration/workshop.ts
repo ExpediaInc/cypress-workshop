@@ -12,7 +12,10 @@ describe('Search Results Page', () => {
         });
 
         it('can dismiss banner', () => {
-            // Test code goes here
+            cy.findByRole('button', { name: /Dismiss/ })
+                .click()
+            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
+                .should('not.exist');
         });
     });
 
