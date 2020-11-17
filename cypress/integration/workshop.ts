@@ -2,7 +2,7 @@ const url = '/Hotel-Search?adults=2&destination=Frankfurt%20%28and%20vicinity%29
 
 describe('Search Results Page', () => {
     before(() => {
-        // Test setup code goes here
+        cy.visit(url);
     });
 
     describe('COVID Banner', () => {
