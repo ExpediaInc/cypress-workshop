@@ -21,7 +21,8 @@ describe('Search Results Page', () => {
 
     describe('Search Results', () => {
         it('should display COVID-19 banner on page load', () => {
-            // Test code goes here
+            cy.get('section[data-stid="section-results"]')
+                .should('be.visible');
         });
     });
 });
