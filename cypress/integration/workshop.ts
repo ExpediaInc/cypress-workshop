@@ -13,8 +13,8 @@ describe('Search Results Page', () => {
 
         it('can dismiss banner', () => {
             cy.findByRole('button', { name: /Dismiss/ })
-                .click()
-            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
+                .click();
+            cy.findByText(/Germany may have travel restrictions in place/)
                 .should('not.exist');
         });
     });
