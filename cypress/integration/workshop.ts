@@ -7,14 +7,14 @@ describe('Search Results Page', () => {
 
     describe('COVID Banner', () => {
         it('should display COVID-19 banner on page load', () => {
-            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
+            cy.findByText(/Germany may have travel restrictions in place/)
                 .should('be.visible');
         });
 
         it('can dismiss banner', () => {
             cy.findByRole('button', { name: /Dismiss/ })
-                .click()
-            cy.findByText('Germany may have travel restrictions in place due to COVID-19.')
+                .click();
+            cy.findByText(/Germany may have travel restrictions in place/)
                 .should('not.exist');
         });
     });
