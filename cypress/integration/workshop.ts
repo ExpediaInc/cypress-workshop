@@ -21,7 +21,7 @@ describe('Search Results Page', () => {
 
     describe('Search Results', () => {
         it('should display search results section', () => {
-            cy.get('section[data-stid="section-results"]')
+            cy.findByTestId('section-results')
                 .should('be.visible');
         });
     });
